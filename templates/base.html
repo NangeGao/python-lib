@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IT电子书</title>
+    <meta name="renderer" content="webkit" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="keywords" content="电子书图书馆" />
+    <meta name="description" content="IT电子书图书馆" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link crossorigin="anonymous" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" href="https://lib.baomitu.com/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/common.css') }}">
+    {% block head_script %}
+    {% endblock %}
+  </head>
+  <body>
+    {% include 'components/header.html' %}
+    <div id="wrapper">
+      {% block body %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+

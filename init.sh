@@ -1,0 +1,1 @@
+python ./scripts/gen_cover.py

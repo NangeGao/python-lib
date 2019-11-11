@@ -1,0 +1,18 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">IT E-Books</a>
+      <p class="navbar-text">当前共{{ get_books_count() }}本书，仅供内部学习参考。有些pdf文件生成方式不规范，封面截图不成功导致显示异常，不影响阅读电子书。</p>
+    </div>
+
+    <form class="navbar-form navbar-right" action="/search" method="GET">
+      <div class="form-group">
+        <input type="text" class="form-control" name="keyword" placeholder="Search">
+      </div>
+    </form>
+
+    <form class="navbar-form navbar-right" action="/upload" method="GET">
+      <button type="submit" class="btn btn-success">上传电子书</button>
+    </form>
+  </div>
+</nav>

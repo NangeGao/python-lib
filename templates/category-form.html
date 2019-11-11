@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div>
+  <div class="upload-wrapper">
+    <div class="page-header">
+      <h1>
+        新增分类
+        <small style="font-size: 14px;">仅支持pdf格式。【注意】有些pdf由于生成方式不规范，不一定能成功截取封面，视为无法上传。</small>
+      </h1>
+    </div>
+    {% import "bootstrap/wtf.html" as wtf %}
+    {{ wtf.quick_form(form) }}
+  </div>
+</div>
+{% endblock %}

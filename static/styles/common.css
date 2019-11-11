@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  color: seagreen;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: seagreen;
+}
+
+#wrapper {
+}
+#main {
+  display: flex;
+  height: calc(100vh - 95px);
+}
+#sidebar {
+  width: 200px;
+  flex-shrink: 0;
+  overflow: auto;
+}
+
+.books-wrapper {
+  flex-grow: 1;
+  overflow: auto;
+}
+.keyword-info {
+  margin: 20px;
+  padding: 10px;
+  background: #ffffe4;
+  border: 1px solid #fc0;
+  border-radius: 4px;
+  color: #999;
+}
+ul.books {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul.books li {
+  width: 200px;
+  text-align: center;
+  margin: 15px;
+}
+ul.books li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul.books li img {
+  background: #eee;
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 6px;
+}
+ul.books li a:hover img {
+  background: #efe;
+  border-color: seagreen;
+}
+
+.upload-wrapper {
+  padding: 10px 30px;
+}
+
+.add-category-wrapper {
+  height: 70px;
+  margin-top: -70px;
+  text-align: right;
+}
+
+
+
+
+
+/* reset Bootstrap */
+.navbar-brand {
+  color: #4cae4c!important;
+  font-size: 22px;
+}
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  background-color: mediumseagreen;
+  border-color: seagreen;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.form-group {
+  margin-bottom: 25px;
+}
